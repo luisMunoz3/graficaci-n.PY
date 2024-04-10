@@ -27,8 +27,8 @@ st.plotly_chart(fig)
 
 #Gráfica de dispersión
 st.title('Gráfica de Dispersión')
-valx = st.multiselect("Selecciona un string", columns, default="Country")
-valy = st.multiselect("Selecciona la métrica, que debe ser tipo número", columns, default="Ratings")
+valx = st.multiselect("Selecciona un string", columns, default="home")
+valy = st.multiselect("Selecciona la métrica, que debe ser tipo número", columns, default="pitches_called	")
 
 valoresx = df[valx[0]]
 valoresy = df[valy[0]]
